@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="800" fill="#111827" text-anchor="middle" class="font">手机号登录</text>
+<text x="195" y="96" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">用户端 CUSTOMER</text>
+<rect x="0" y="100" width="390" height="744" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="24" y="150" font-size="20" font-weight="900" fill="#111827" text-anchor="start" class="font">手机号登录</text>
+<text x="24" y="176" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">未注册手机号将自动创建账号</text>
+<text x="24" y="220" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">手机号</text>
+<rect x="24" y="232" width="342" height="46" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="40" y="262" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">请输入手机号</text>
+<text x="24" y="310" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">验证码</text>
+<rect x="24" y="322" width="220" height="46" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="40" y="352" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">6位验证码</text>
+<rect x="254" y="322" width="112" height="46" rx="14" ry="14" fill="#F3F4F6" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="310" y="352" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">获取</text>
+<rect x="24" y="404" width="342" height="50" rx="16" ry="16" fill="#FF7A00" opacity="1.0" />
+<text x="195" y="437" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="font">登录</text>
+<text x="195" y="480" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle" class="font">登录即表示同意《用户协议》《隐私政策》</text>
+</svg>

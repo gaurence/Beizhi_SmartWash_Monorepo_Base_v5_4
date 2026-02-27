@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+<filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+</defs>
+<style><![CDATA[
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="800" fill="#111827" text-anchor="middle" class="font">增值服务</text>
+<text x="195" y="96" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">用户端 CUSTOMER</text>
+<rect x="0" y="766" width="390" height="78" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<circle cx="52" cy="794" r="12" fill="#FF7A00"/>
+<text x="52" y="824" font-size="11" font-weight="800" fill="#FF7A00" text-anchor="middle" class="font">首页</text>
+<circle cx="144" cy="794" r="12" fill="#E5E7EB"/>
+<text x="144" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">订单</text>
+<circle cx="246" cy="794" r="12" fill="#E5E7EB"/>
+<text x="246" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">消息</text>
+<circle cx="338" cy="794" r="12" fill="#E5E7EB"/>
+<text x="338" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">我的</text>
+<rect x="16" y="116" width="358" height="72" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="144" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">内饰清洁 +20</text>
+<text x="358" y="156" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">选择</text>
+<rect x="16" y="200" width="358" height="72" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="228" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">打蜡 +60</text>
+<text x="358" y="240" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">选择</text>
+<rect x="16" y="284" width="358" height="72" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="312" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">臭氧除味 +30</text>
+<text x="358" y="324" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">选择</text>
+<rect x="16" y="700" width="358" height="52" rx="16" ry="16" fill="#FF7A00" opacity="1.0" />
+<text x="195.0" y="731.0" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">确定</text>
+</svg>

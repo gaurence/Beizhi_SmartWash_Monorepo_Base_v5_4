@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+.font{font-family:'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif;}
+]]></style>
+<rect x="0" y="0" width="1440" height="900" fill="#0B1220"/>
+<circle cx="1180" cy="120" r="260" fill="#FF7A00" opacity="0.18"/>
+<circle cx="260" cy="820" r="320" fill="#FF7A00" opacity="0.12"/>
+<rect x="500.0" y="190.0" width="440" height="520" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="540.0" y="262.0" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="540.0" y="288.0" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">区域代理 AGENT_ADMIN</text>
+<text x="540.0" y="330.0" font-size="18" font-weight="800" fill="#111827" text-anchor="start" class="font">登录</text>
+<text x="540.0" y="376.0" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">用户名 / Username</text>
+<rect x="540.0" y="384.0" width="360" height="44" rx="12" fill="#F9FAFB" stroke="#E5E7EB"/>
+<text x="554.0" y="412.0" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">例如：admin</text>
+<text x="540.0" y="460.0" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">密码 / Password</text>
+<rect x="540.0" y="468.0" width="360" height="44" rx="12" fill="#F9FAFB" stroke="#E5E7EB"/>
+<text x="554.0" y="496.0" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">••••••••</text>
+<text x="540.0" y="544.0" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">MFA 码（如需）</text>
+<rect x="540.0" y="552.0" width="360" height="44" rx="12" fill="#F9FAFB" stroke="#E5E7EB"/>
+<text x="554.0" y="580.0" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">6位验证码</text>
+<rect x="540.0" y="610.0" width="360" height="48" rx="14" fill="#FF7A00"/>
+<text x="720.0" y="642.0" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">登录并进入控制台</text>
+<text x="540.0" y="690.0" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">提示：登录后通过 Header 方式携带 X-User-Id/X-Tenant-Id 等信息</text>
+</svg>

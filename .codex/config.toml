@@ -1,0 +1,8 @@
+approval_policy = "on-request"
+sandbox_mode    = "workspace-write"
+
+[sandbox_workspace_write]
+# Codex default should be offline; approve per-run when needed.
+network_access = true
+
+file_opener = "vscode"

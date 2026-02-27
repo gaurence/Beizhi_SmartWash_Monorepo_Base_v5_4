@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+<filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+</defs>
+<style><![CDATA[
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="800" fill="#111827" text-anchor="middle" class="font">异常列表</text>
+<text x="195" y="96" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">技师端 TECHNICIAN</text>
+<rect x="0" y="766" width="390" height="78" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<circle cx="80" cy="794" r="12" fill="#E5E7EB"/>
+<text x="80" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">任务</text>
+<circle cx="195" cy="794" r="12" fill="#FF7A00"/>
+<text x="195" y="824" font-size="11" font-weight="900" fill="#FF7A00" text-anchor="middle" class="font">异常</text>
+<circle cx="310" cy="794" r="12" fill="#E5E7EB"/>
+<text x="310" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">我的</text>
+<rect x="16" y="116" width="358" height="90" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="144" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">异常记录</text>
+<text x="32" y="164" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">可点击查看详情</text>
+<rect x="16" y="226" width="358" height="66" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="254" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">Item 1</text>
+<text x="358" y="266" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">查看</text>
+<rect x="16" y="304" width="358" height="66" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="332" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">Item 2</text>
+<text x="358" y="344" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">查看</text>
+<rect x="16" y="382" width="358" height="66" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="410" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">Item 3</text>
+<text x="358" y="422" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">查看</text>
+<rect x="16" y="460" width="358" height="66" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="488" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">Item 4</text>
+<text x="358" y="500" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">查看</text>
+<rect x="16" y="538" width="358" height="66" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="566" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">Item 5</text>
+<text x="358" y="578" font-size="12" font-weight="800" fill="#FF7A00" text-anchor="end" class="font">查看</text>
+<rect x="16" y="700" width="358" height="52" rx="16" ry="16" fill="#FF7A00" opacity="1.0" />
+<text x="195.0" y="731.0" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">发起异常上报</text>
+</svg>

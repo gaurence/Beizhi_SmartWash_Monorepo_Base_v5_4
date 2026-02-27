@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="800" fill="#111827" text-anchor="middle" class="font">备至代客洗车</text>
+<text x="195" y="96" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">用户端 CUSTOMER</text>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<circle cx="320" cy="200" r="180" fill="#FF7A00" opacity="0.22"/>
+<circle cx="80" cy="700" r="220" fill="#FF7A00" opacity="0.14"/>
+<text x="195" y="380" font-size="26" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="font">备至代客洗车</text>
+<text x="195" y="412" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle" class="font">智能钥匙柜 · 异步交接 · 全程可追踪</text>
+<rect x="120" y="520" width="150" height="44" rx="16" ry="16" fill="#FF7A00" opacity="1.0" />
+<text x="195" y="548" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="font">立即开始</text>
+</svg>

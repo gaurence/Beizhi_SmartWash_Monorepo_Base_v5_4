@@ -1,0 +1,204 @@
+asyncapi: 2.6.0
+info:
+  title: Beizhi SmartWash Event & IoT AsyncAPI
+  version: v5.4
+  description: 备至智洗平台事件/消息契约（v5.4）：包含平台内部事件总线（Kafka/RabbitMQ）与柜体 MQTT 主题（EMQX/Mosquitto）。
+servers:
+  kafka:
+    url: kafka:9092
+    protocol: kafka
+  rabbitmq:
+    url: amqp://rabbitmq:5672
+    protocol: amqp
+  mqtt:
+    url: mqtt://emqx:1883
+    protocol: mqtt
+defaultContentType: application/json
+channels:
+  smartwash.domain.events:
+    publish:
+      summary: 领域事件总线（Order/Task/Cabinet/Finance等）
+      message:
+        $ref: '#/components/messages/DomainEvent'
+  smartwash.notification.commands:
+    publish:
+      summary: 通知发送命令（站内信/短信/推送）
+      message:
+        $ref: '#/components/messages/NotificationCommand'
+  smartwash.finance.events:
+    publish:
+      summary: 财务结算/对账/退款事件
+      message:
+        $ref: '#/components/messages/FinanceEvent'
+  mqtt/cabinets/{cabinetId}/commands/open-slot:
+    publish:
+      summary: 下发开格口指令（requestId+ttl）
+      message:
+        $ref: '#/components/messages/MqttOpenSlotCommand'
+  mqtt/cabinets/{cabinetId}/acks/open-slot:
+    subscribe:
+      summary: 开格口 ACK 回执（成功/失败/原因）
+      message:
+        $ref: '#/components/messages/MqttOpenSlotAck'
+  mqtt/cabinets/{cabinetId}/events:
+    subscribe:
+      summary: 柜体事件上报（心跳/门磁/故障/操作记录）
+      message:
+        $ref: '#/components/messages/MqttCabinetEvent'
+components:
+  messages:
+    DomainEvent:
+      name: DomainEvent
+      title: Domain Event
+      payload:
+        $ref: '#/components/schemas/DomainEventPayload'
+    NotificationCommand:
+      name: NotificationCommand
+      title: Notification Command
+      payload:
+        $ref: '#/components/schemas/NotificationCommandPayload'
+    FinanceEvent:
+      name: FinanceEvent
+      title: Finance Event
+      payload:
+        $ref: '#/components/schemas/FinanceEventPayload'
+    MqttOpenSlotCommand:
+      name: MqttOpenSlotCommand
+      title: MQTT Open Slot Command
+      payload:
+        $ref: '#/components/schemas/MqttOpenSlotCommandPayload'
+    MqttOpenSlotAck:
+      name: MqttOpenSlotAck
+      title: MQTT Open Slot Ack
+      payload:
+        $ref: '#/components/schemas/MqttOpenSlotAckPayload'
+    MqttCabinetEvent:
+      name: MqttCabinetEvent
+      title: MQTT Cabinet Event
+      payload:
+        $ref: '#/components/schemas/MqttCabinetEventPayload'
+  schemas:
+    DomainEventPayload:
+      type: object
+      properties:
+        eventId:
+          type: string
+        eventType:
+          type: string
+          description: 如 Order.Created / Order.StatusChanged / Task.Assigned / Cabinet.StoreBindingChanged
+        occurredAt:
+          type: string
+          format: date-time
+        tenantId:
+          type: string
+        aggregateType:
+          type: string
+        aggregateId:
+          type: string
+        data:
+          type: object
+          additionalProperties: true
+      required:
+      - eventId
+      - eventType
+      - occurredAt
+    NotificationCommandPayload:
+      type: object
+      properties:
+        commandId:
+          type: string
+        channel:
+          type: string
+          description: IN_APP/SMS/PUSH
+        templateCode:
+          type: string
+        recipient:
+          type: object
+          additionalProperties: true
+        variables:
+          type: object
+          additionalProperties: true
+        tenantId:
+          type: string
+        requestId:
+          type: string
+      required:
+      - commandId
+      - channel
+      - templateCode
+    FinanceEventPayload:
+      type: object
+      properties:
+        eventId:
+          type: string
+        eventType:
+          type: string
+          description: Settlement.Generated / Refund.Approved / PayoutAccount.Submitted
+        tenantId:
+          type: string
+        data:
+          type: object
+          additionalProperties: true
+        occurredAt:
+          type: string
+          format: date-time
+      required:
+      - eventId
+      - eventType
+      - occurredAt
+    MqttOpenSlotCommandPayload:
+      type: object
+      properties:
+        requestId:
+          type: string
+        slotNo:
+          type: string
+        ttlMs:
+          type: integer
+        issuedAt:
+          type: string
+          format: date-time
+        signature:
+          type: string
+          description: 可选：指令签名/nonce，用于防重放
+      required:
+      - requestId
+      - slotNo
+      - ttlMs
+    MqttOpenSlotAckPayload:
+      type: object
+      properties:
+        requestId:
+          type: string
+        success:
+          type: boolean
+        reason:
+          type: string
+        ackedAt:
+          type: string
+          format: date-time
+      required:
+      - requestId
+      - success
+      - ackedAt
+    MqttCabinetEventPayload:
+      type: object
+      properties:
+        eventId:
+          type: string
+        eventType:
+          type: string
+          description: HEARTBEAT/DOOR_OPENED/FAULT/OP_LOG
+        cabinetId:
+          type: string
+        occurredAt:
+          type: string
+          format: date-time
+        payload:
+          type: object
+          additionalProperties: true
+      required:
+      - eventId
+      - eventType
+      - cabinetId
+      - occurredAt
