@@ -1,39 +1,34 @@
-# Codex Iteration Prompts (Beizhi SmartWash v5.4)
+# Beizhi SmartWash Codex Iteration Prompts v5.4 (Anti-disconnect)
 
-本目录提供 **“三道硬门禁 + 每迭代一条端到端切片”** 的 ITER 提示词。
-执行顺序：从 `ITER-00` 开始依次执行到 `ITER-22`。
+This set is split into two files per iteration:
+- `ITER-XX_PLAN.md`: planning only. Writes `docs/qa/manual/ITER-XX.plan.md` and stops.
+- `ITER-XX_DO.md`: implementation in time-boxed chunks (≤ 8 minutes or ≤ 5 files), commits each chunk, writes `docs/qa/manual/ITER-XX.md`, then stops.
 
-## 三道硬门禁（每个 ITER 必须通过）
-1) **Gate A — Page Coverage**：本迭代涉及页面必须在对应前端应用中可访问（路由/菜单/入口），并更新 `docs/ui/page_inventory.csv` 的 `impl_status`。
-2) **Gate B — Traceability**：本迭代涉及页面必须在 `docs/traceability/page_to_api.md` 中补齐（页面 → API/DTO → permission_key），并同步到 `docs/contracts/openapi.yaml`（必要时 asyncapi）。
-3) **Gate C — Visual Regression**：对 `impl_status=implemented` 的页面，新增/更新 Playwright 截图用例，与 SVG 基线对比（允许少量容差；基线变更必须有理由）。
+Run order:
 
-## 夜间自动跑（可选）
-- 如果你安装了 Codex CLI，可用 `scripts/codex/run_all_iterations.sh` 顺序执行（遇到门禁失败即停止）。
-- 若仅使用 VS Code 扩展：每次打开对应 `ITER-XX_*.md`，将全文作为提示词交给 Codex 执行。
+- ITER-00: `ITER-00_PLAN.md` → `ITER-00_DO.md` (repeat DO as many chunks as needed)
+- ITER-01: `ITER-01_PLAN.md` → `ITER-01_DO.md` (repeat DO as many chunks as needed)
+- ITER-02: `ITER-02_PLAN.md` → `ITER-02_DO.md` (repeat DO as many chunks as needed)
+- ITER-03: `ITER-03_PLAN.md` → `ITER-03_DO.md` (repeat DO as many chunks as needed)
+- ITER-04: `ITER-04_PLAN.md` → `ITER-04_DO.md` (repeat DO as many chunks as needed)
+- ITER-05: `ITER-05_PLAN.md` → `ITER-05_DO.md` (repeat DO as many chunks as needed)
+- ITER-06: `ITER-06_PLAN.md` → `ITER-06_DO.md` (repeat DO as many chunks as needed)
+- ITER-07: `ITER-07_PLAN.md` → `ITER-07_DO.md` (repeat DO as many chunks as needed)
+- ITER-08: `ITER-08_PLAN.md` → `ITER-08_DO.md` (repeat DO as many chunks as needed)
+- ITER-09: `ITER-09_PLAN.md` → `ITER-09_DO.md` (repeat DO as many chunks as needed)
+- ITER-10: `ITER-10_PLAN.md` → `ITER-10_DO.md` (repeat DO as many chunks as needed)
+- ITER-11: `ITER-11_PLAN.md` → `ITER-11_DO.md` (repeat DO as many chunks as needed)
+- ITER-12: `ITER-12_PLAN.md` → `ITER-12_DO.md` (repeat DO as many chunks as needed)
+- ITER-13: `ITER-13_PLAN.md` → `ITER-13_DO.md` (repeat DO as many chunks as needed)
+- ITER-14: `ITER-14_PLAN.md` → `ITER-14_DO.md` (repeat DO as many chunks as needed)
+- ITER-15: `ITER-15_PLAN.md` → `ITER-15_DO.md` (repeat DO as many chunks as needed)
+- ITER-16: `ITER-16_PLAN.md` → `ITER-16_DO.md` (repeat DO as many chunks as needed)
+- ITER-17: `ITER-17_PLAN.md` → `ITER-17_DO.md` (repeat DO as many chunks as needed)
+- ITER-18: `ITER-18_PLAN.md` → `ITER-18_DO.md` (repeat DO as many chunks as needed)
+- ITER-19: `ITER-19_PLAN.md` → `ITER-19_DO.md` (repeat DO as many chunks as needed)
+- ITER-20: `ITER-20_PLAN.md` → `ITER-20_DO.md` (repeat DO as many chunks as needed)
+- ITER-21: `ITER-21_PLAN.md` → `ITER-21_DO.md` (repeat DO as many chunks as needed)
+- ITER-22: `ITER-22_PLAN.md` → `ITER-22_DO.md` (repeat DO as many chunks as needed)
 
-## 迭代清单
-
-- **ITER-00**：底座与三道硬门禁（Page/Trace/Visual）
-- **ITER-01**：统一认证登录、租户会话、角色菜单与首页仪表盘
-- **ITER-02**：平台：租户/组织/用户/角色权限（RBAC+ABAC）
-- **ITER-03**：区域代理：门店拓展、门店详情与入驻上线流程
-- **ITER-04**：门店：人员体系（技师/代泊/物业协作）、洗车组、排班与资质
-- **ITER-05**：柜体资产：柜/格口/日志/OTA/远程指令 + 基础 IoT 事件
-- **ITER-06**：设备投资方与柜体共享：认领/收益权、柜体-门店绑定 M:N、路由策略
-- **ITER-07**：车主端：实名/KYC + 车辆管理（下单前置）
-- **ITER-08**：服务目录与定价：服务包/加项/动态定价/留置费政策
-- **ITER-09**：下单与存钥匙（模式A）：柜前扫码、预约锁格、存钥匙、排队入列
-- **ITER-10**：订单监控与时间线：平台/运维/门店/车主端统一订单视图
-- **ITER-11**：派单与任务协作：多人技师、取钥匙、预检、开工（ABAC+审计+幂等）
-- **ITER-12**：履约与证据链：洗车过程证据、完工、停车位、还钥匙
-- **ITER-13**：车主取回与支付评价：取钥匙/委托取回码/支付/开票/评分
-- **ITER-14**：模式B：代客泊车履约（代泊角色/任务/轨迹）
-- **ITER-15**：模式C：上门洗车（仍基于钥匙柜）+ 站点/门店路由
-- **ITER-16**：通知与消息：模板、渠道配置、DLQ、站内信与实时推送
-- **ITER-17**：结算与分润：账期、分润策略、收款账户、投资方/代理/门店/物业分配
-- **ITER-18**：退款与对账：退款工单、对账跑批、差异工单、物业代收打款
-- **ITER-19**：风控/审计/合规：风控策略、黑名单、保险/理赔、审计导出
-- **ITER-20**：运营运维：异常工单、告警、离线、柜屏错误态、IoT 告警闭环
-- **ITER-21**：经营报表：平台/代理/门店/投资方/物业多视角报表
-- **ITER-22**：客服与售后：工单中心、订单检索、证据导出、退款协助
+Automation script:
+- `run_all_iterations_v2.sh` runs PLAN then DO for each iteration with retries and resume.

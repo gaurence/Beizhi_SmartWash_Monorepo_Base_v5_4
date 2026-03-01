@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    .bg { fill: #F6F7FB; }
+    .sidebar { fill: #0B1220; }
+    .topbar { fill: #FFFFFF; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadowSoft); }
+    .tableHead { fill: #F3F4F6; }
+    .muted { fill: #6B7280; }
+    
+]]></style>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="260" height="900" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<text x="24" y="44" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="24" y="70" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start" class="font">区域代理 AGENT_ADMIN</text>
+<text x="24" y="110" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▾ 运营概览</text>
+<rect x="12" y="118" width="236" height="34" rx="10" ry="10" fill="#111827" opacity="1.0" />
+<rect x="12" y="118" width="4" height="34" rx="2" ry="2" fill="#FF7A00" opacity="1.0" />
+<text x="34" y="140" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">区域大盘</text>
+<text x="24" y="180" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 门店管理</text>
+<text x="24" y="210" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 入驻上线</text>
+<text x="24" y="240" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 设备运维</text>
+<text x="24" y="270" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 结算分润</text>
+<text x="24" y="300" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 对账中心</text>
+<text x="24" y="330" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 工单中心</text>
+<text x="24" y="360" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 报表中心</text>
+<text x="24" y="390" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 个人中心</text>
+<rect x="260" y="0" width="1180" height="64" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="16" width="360" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<circle cx="301.6" cy="29.6" r="5.6" fill="none" stroke="#6B7280" stroke-width="2"/>
+<line x1="305.52000000000004" y1="33.52" x2="312" y2="40" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="320" y="38" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">搜索 订单号 / 柜体ID / 用户</text>
+<path d="M 1329.0 24.7 C 1325.4 24.7, 1323.96 27.4, 1323.96 30.1 V 33.7 L 1323.24 34.96 V 36.04 H 1334.76 V 34.96 L 1334.04 33.7 V 30.1 C 1334.04 27.4, 1332.6 24.7, 1329.0 24.7 Z" fill="none" stroke="#6B7280" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1329.0" cy="37.3" r="1.08" fill="#6B7280"/>
+<circle cx="1369.0" cy="28.3" r="3.2399999999999998" fill="none" stroke="#6B7280" stroke-width="2"/>
+<path d="M 1363.6 38.2 C 1365.4 33.7, 1372.6 33.7, 1374.4 38.2" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="1250" y="38" font-size="11" font-weight="600" fill="#16A34A" text-anchor="start" class="font">已启用 MFA</text>
+<text x="284" y="108" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">区域运营大盘</text>
+<text x="284" y="134" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">基于 v5.2 需求说明书的端到端页面（示例数据）</text>
+<rect x="284" y="152" width="265" height="92" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="300" y="182" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start" class="font">今日订单</text>
+<text x="300" y="216" font-size="24" font-weight="800" fill="#111827" text-anchor="start" class="font">128</text>
+<text x="533" y="182" font-size="12" font-weight="700" fill="#16A34A" text-anchor="end" class="font">+12%</text>
+<rect x="573" y="152" width="265" height="92" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="589" y="182" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start" class="font">排队中</text>
+<text x="589" y="216" font-size="24" font-weight="800" fill="#111827" text-anchor="start" class="font">36</text>
+<text x="822" y="182" font-size="12" font-weight="700" fill="#16A34A" text-anchor="end" class="font">+4</text>
+<rect x="862" y="152" width="265" height="92" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="878" y="182" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start" class="font">在线柜体</text>
+<text x="878" y="216" font-size="24" font-weight="800" fill="#111827" text-anchor="start" class="font">98.6%</text>
+<text x="1111" y="182" font-size="12" font-weight="700" fill="#16A34A" text-anchor="end" class="font">+0.3%</text>
+<rect x="1151" y="152" width="265" height="92" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1167" y="182" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start" class="font">异常工单</text>
+<text x="1167" y="216" font-size="24" font-weight="800" fill="#111827" text-anchor="start" class="font">5</text>
+<text x="1400" y="182" font-size="12" font-weight="700" fill="#DC2626" text-anchor="end" class="font">-1</text>
+<rect x="284" y="268" width="554" height="280" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="300" y="296" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">订单趋势</text>
+<text x="300" y="316" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">按小时汇总 · Order count/hour</text>
+<rect x="300" y="338" width="522" height="190" rx="10" ry="10" fill="#F9FAFB" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<line x1="300" y1="385.5" x2="822" y2="385.5" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<line x1="300" y1="433.0" x2="822" y2="433.0" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<line x1="300" y1="480.5" x2="822" y2="480.5" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<path d="M 300.0 428.0 L 374.6 378.6 L 449.1 468.3 L 523.7 477.8 L 598.3 444.4 L 672.9 415.2 L 747.4 456.3 L 822.0 458.7" fill="none" stroke="#FF7A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="300.0" cy="428.0" r="4" fill="#FF7A00"/>
+<circle cx="449.1" cy="468.3" r="4" fill="#FF7A00"/>
+<circle cx="598.3" cy="444.4" r="4" fill="#FF7A00"/>
+<circle cx="747.4" cy="456.3" r="4" fill="#FF7A00"/>
+<rect x="862" y="268" width="554" height="280" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="878" y="296" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">推送延迟</text>
+<text x="878" y="316" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">P95 推送延迟(ms) · Notification latency</text>
+<rect x="878" y="338" width="522" height="190" rx="10" ry="10" fill="#F9FAFB" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<line x1="878" y1="385.5" x2="1400" y2="385.5" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<line x1="878" y1="433.0" x2="1400" y2="433.0" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<line x1="878" y1="480.5" x2="1400" y2="480.5" stroke="#E5E7EB" stroke-width="1" opacity="0.7" />
+<path d="M 878.0 380.5 L 952.6 386.3 L 1027.1 400.6 L 1101.7 376.9 L 1176.3 483.3 L 1250.9 416.8 L 1325.4 378.8 L 1400.0 399.4" fill="none" stroke="#FF7A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="878.0" cy="380.5" r="4" fill="#FF7A00"/>
+<circle cx="1027.1" cy="400.6" r="4" fill="#FF7A00"/>
+<circle cx="1176.3" cy="483.3" r="4" fill="#FF7A00"/>
+<circle cx="1325.4" cy="378.8" r="4" fill="#FF7A00"/>
+<rect x="284" y="572" width="1132" height="300" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="300" y="600" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">实时订单列表</text>
+<rect x="300" y="616" width="94" height="24" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="347.0" y="634" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">tenant=T01</text>
+<rect x="404" y="616" width="126" height="24" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="467.0" y="634" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">status!=Closed</text>
+<rect x="300" y="654" width="1100" height="34" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="310.0" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">订单号</text>
+<text x="467.1428571428571" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">门店</text>
+<text x="624.2857142857142" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">状态</text>
+<text x="781.4285714285714" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">车主</text>
+<text x="938.5714285714286" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">技师</text>
+<text x="1095.7142857142858" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">格口</text>
+<text x="1252.857142857143" y="677" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">创建时间</text>
+<rect x="300" y="688" width="1100" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="300" y1="726" x2="1400" y2="726" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="310.0" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD20261000</text>
+<text x="467.1428571428571" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">门店-177</text>
+<rect x="624.2857142857142" y="696" width="81" height="22" rx="11" ry="11" fill="#FFF7ED" opacity="1.0" />
+<text x="664.7857142857142" y="712" font-size="11" font-weight="700" fill="#C2410C" text-anchor="middle" class="font">InService</text>
+<text x="781.4285714285714" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">138****2471</text>
+<text x="938.5714285714286" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师-3</text>
+<text x="1095.7142857142858" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-09</text>
+<text x="1252.857142857143" y="713" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">02-16 10:00</text>
+<rect x="300" y="726" width="1100" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="300" y1="764" x2="1400" y2="764" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="310.0" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD20261001</text>
+<text x="467.1428571428571" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">门店-112</text>
+<rect x="624.2857142857142" y="734" width="60" height="22" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="654.2857142857142" y="750" font-size="11" font-weight="700" fill="#374151" text-anchor="middle" class="font">Closed</text>
+<text x="781.4285714285714" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">138****7395</text>
+<text x="938.5714285714286" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师-8</text>
+<text x="1095.7142857142858" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-01</text>
+<text x="1252.857142857143" y="751" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">02-16 10:07</text>
+<rect x="300" y="764" width="1100" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="300" y1="802" x2="1400" y2="802" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="310.0" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD20261002</text>
+<text x="467.1428571428571" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">门店-120</text>
+<rect x="624.2857142857142" y="772" width="130" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="689.2857142857142" y="788" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">ServiceCompleted</text>
+<text x="781.4285714285714" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">138****1348</text>
+<text x="938.5714285714286" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师-8</text>
+<text x="1095.7142857142858" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-19</text>
+<text x="1252.857142857143" y="789" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">02-16 10:14</text>
+<rect x="300" y="802" width="1100" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="300" y1="840" x2="1400" y2="840" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="310.0" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD20261003</text>
+<text x="467.1428571428571" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">门店-164</text>
+<rect x="624.2857142857142" y="810" width="130" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="689.2857142857142" y="826" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">ServiceCompleted</text>
+<text x="781.4285714285714" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">138****1646</text>
+<text x="938.5714285714286" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师-4</text>
+<text x="1095.7142857142858" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-16</text>
+<text x="1252.857142857143" y="827" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">02-16 10:21</text>
+<rect x="1328" y="588" width="72" height="30" rx="10" ry="10" fill="#FF7A00" opacity="1.0" />
+<text x="1364.0" y="609" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">刷新</text>
+</svg>

@@ -12,6 +12,10 @@ tags:
   description: 登录、鉴权、会话
 - name: tenant-org
   description: 租户/组织/门店/站点管理（平台/代理/门店）
+- name: rbac
+  description: 用户/角色/权限矩阵（RBAC）
+- name: abac
+  description: 按单授权与策略（ABAC）
 - name: order
   description: 订单（平台/门店/APP）
 - name: task
@@ -292,6 +296,94 @@ paths:
           description: Forbidden
         '404':
           description: Not Found
+  /app/orders/{orderId}/cancel:
+    post:
+      operationId: postAppOrdersByOrderIdCancel
+      tags:
+      - app-customer
+      summary: POST /app/orders/{orderId}/cancel
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /app/orders/{orderId}/delegate-retrieve-code:
+    post:
+      operationId: postAppOrdersByOrderIdDelegateRetrieveCode
+      tags:
+      - app-customer
+      summary: POST /app/orders/{orderId}/delegate-retrieve-code
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
   /app/orders/{orderId}/deposit-key:
     post:
       operationId: postAppOrdersByOrderIdDepositKey
@@ -633,6 +725,135 @@ paths:
         required: true
         schema:
           type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /app/tech/profile:
+    get:
+      operationId: getAppTechProfile
+      tags:
+      - app-tech
+      summary: GET /app/tech/profile
+      parameters: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /app/tech/notification-prefs:
+    get:
+      operationId: getAppTechNotificationPrefs
+      tags:
+      - app-tech
+      summary: GET /app/tech/notification-prefs
+      parameters: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    put:
+      operationId: putAppTechNotificationPrefs
+      tags:
+      - app-tech
+      summary: PUT /app/tech/notification-prefs
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /app/tech/role-mode-switch:
+    post:
+      operationId: postAppTechRoleModeSwitch
+      tags:
+      - app-tech
+      summary: POST /app/tech/role-mode-switch
+      parameters:
       - name: Idempotency-Key
         in: header
         required: false
@@ -1255,6 +1476,1035 @@ paths:
           description: Forbidden
         '404':
           description: Not Found
+  /abac/policies:
+    get:
+      operationId: getAbacPolicies
+      tags:
+      - abac
+      summary: GET /abac/policies
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+    post:
+      operationId: postAbacPolicies
+      tags:
+      - abac
+      summary: POST /abac/policies
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /abac/policies/{policyId}:
+    put:
+      operationId: putAbacPoliciesByPolicyId
+      tags:
+      - abac
+      summary: PUT /abac/policies/{policyId}
+      parameters:
+      - name: policyId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /access-grants:
+    get:
+      operationId: getAccessGrants
+      tags:
+      - abac
+      summary: GET /access-grants
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+    post:
+      operationId: postAccessGrants
+      tags:
+      - abac
+      summary: POST /access-grants
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /orgs/tree:
+    get:
+      operationId: getOrgsTree
+      tags:
+      - tenant-org
+      summary: GET /orgs/tree
+      parameters: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+  /permissions:
+    get:
+      operationId: getPermissions
+      tags:
+      - rbac
+      summary: GET /permissions
+      parameters: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+  /roles:
+    get:
+      operationId: getRoles
+      tags:
+      - rbac
+      summary: GET /roles
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+    post:
+      operationId: postRoles
+      tags:
+      - rbac
+      summary: POST /roles
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /roles/{roleId}:
+    put:
+      operationId: putRolesByRoleId
+      tags:
+      - rbac
+      summary: PUT /roles/{roleId}
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /roles/{roleId}/permissions:
+    put:
+      operationId: putRolesByRoleIdPermissions
+      tags:
+      - rbac
+      summary: PUT /roles/{roleId}/permissions
+      parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /tenants:
+    get:
+      operationId: getTenants
+      tags:
+      - tenant-org
+      summary: GET /tenants
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+    post:
+      operationId: postTenants
+      tags:
+      - tenant-org
+      summary: POST /tenants
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /tenants/{tenantId}:
+    get:
+      operationId: getTenantsByTenantId
+      tags:
+      - tenant-org
+      summary: GET /tenants/{tenantId}
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    put:
+      operationId: putTenantsByTenantId
+      tags:
+      - tenant-org
+      summary: PUT /tenants/{tenantId}
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /tenants/{tenantId}/orgs:
+    get:
+      operationId: getTenantsByTenantIdOrgs
+      tags:
+      - tenant-org
+      summary: GET /tenants/{tenantId}/orgs
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      operationId: postTenantsByTenantIdOrgs
+      tags:
+      - tenant-org
+      summary: POST /tenants/{tenantId}/orgs
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /tenants/{tenantId}/stores:
+    get:
+      operationId: listStores
+      tags:
+      - tenant-org
+      summary: GET /tenants/{tenantId}/stores
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      operationId: createStore
+      tags:
+      - tenant-org
+      summary: POST /tenants/{tenantId}/stores
+      parameters:
+      - name: tenantId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /stores/{storeId}:
+    get:
+      operationId: getStore
+      tags:
+      - tenant-org
+      summary: GET /stores/{storeId}
+      parameters:
+      - name: storeId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    put:
+      operationId: updateStore
+      tags:
+      - tenant-org
+      summary: PUT /stores/{storeId}
+      parameters:
+      - name: storeId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /stores/{storeId}/agreements:
+    get:
+      operationId: listAgreements
+      tags:
+      - tenant-org
+      summary: GET /stores/{storeId}/agreements
+      parameters:
+      - name: storeId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      operationId: createAgreement
+      tags:
+      - tenant-org
+      summary: POST /stores/{storeId}/agreements
+      parameters:
+      - name: storeId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /staff:
+    get:
+      operationId: getStaff
+      tags:
+      - task
+      summary: GET /staff
+      parameters:
+      - name: staffType
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    post:
+      operationId: postStaff
+      tags:
+      - task
+      summary: POST /staff
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /staff/{staffId}:
+    get:
+      operationId: getStaffByStaffId
+      tags:
+      - task
+      summary: GET /staff/{staffId}
+      parameters:
+      - name: staffId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /users:
+    get:
+      operationId: getUsers
+      tags:
+      - rbac
+      summary: GET /users
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+    post:
+      operationId: postUsers
+      tags:
+      - rbac
+      summary: POST /users
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /users/{userId}:
+    get:
+      operationId: getUsersByUserId
+      tags:
+      - rbac
+      summary: GET /users/{userId}
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+    put:
+      operationId: putUsersByUserId
+      tags:
+      - rbac
+      summary: PUT /users/{userId}
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /users/{userId}/roles:
+    put:
+      operationId: putUsersByUserIdRoles
+      tags:
+      - rbac
+      summary: PUT /users/{userId}/roles
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
   /auth/login:
     post:
       operationId: postAuthLogin
@@ -2020,6 +3270,94 @@ paths:
             schema:
               type: object
               additionalProperties: true
+  /iot/cabinets/{cabinetId}/commands/ota:
+    post:
+      operationId: postIotCabinetsByCabinetIdCommandsOta
+      tags:
+      - iot
+      summary: POST /iot/cabinets/{cabinetId}/commands/ota
+      parameters:
+      - name: cabinetId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+  /iot/cabinets/{cabinetId}/commands/remote:
+    post:
+      operationId: postIotCabinetsByCabinetIdCommandsRemote
+      tags:
+      - iot
+      summary: POST /iot/cabinets/{cabinetId}/commands/remote
+      parameters:
+      - name: cabinetId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
   /iot/cabinets/{cabinetId}/events:
     get:
       operationId: getIotCabinetsByCabinetIdEvents
@@ -2373,6 +3711,88 @@ paths:
           description: Forbidden
         '404':
           description: Not Found
+  /risk/policies:
+    get:
+      operationId: getRiskPolicies
+      tags:
+      - risk
+      summary: GET /risk/policies
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+  /risk/policies/{policyId}:
+    put:
+      operationId: putRiskPoliciesByPolicyId
+      tags:
+      - risk
+      summary: PUT /risk/policies/{policyId}
+      parameters:
+      - name: policyId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Idempotency-Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: 幂等键（建议对状态流转/开柜/结算/退款等操作启用）
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
   /tasks:
     get:
       operationId: getTasks

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+<filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+</defs>
+<style><![CDATA[
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    .bg { fill: #F6F7FB; }
+    .sidebar { fill: #0B1220; }
+    .topbar { fill: #FFFFFF; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadowSoft); }
+    .tableHead { fill: #F3F4F6; }
+    .muted { fill: #6B7280; }
+]]></style>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="260" height="900" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<text x="24" y="44" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="24" y="70" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start" class="font">平台运营 PLATFORM_OPS</text>
+<text x="24" y="110" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 运营概览</text>
+<text x="24" y="140" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单与履约</text>
+<text x="24" y="170" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 设备运维</text>
+<text x="24" y="200" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▾ IoT事件</text>
+<text x="34" y="230" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">事件列表</text>
+<text x="34" y="270" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">事件详情</text>
+<rect x="12" y="288" width="236" height="34" rx="10" ry="10" fill="#111827" opacity="1.0" />
+<rect x="12" y="288" width="4" height="34" rx="2" ry="2" fill="#FF7A00" opacity="1.0" />
+<text x="34" y="310" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">手工注入</text>
+<text x="34" y="350" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">事件回放</text>
+<text x="34" y="390" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">回放确认</text>
+<text x="24" y="430" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 工单中心</text>
+<text x="24" y="460" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 通知中心</text>
+<text x="24" y="490" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 对账中心</text>
+<text x="24" y="520" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 审计合规</text>
+<text x="24" y="550" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 个人中心</text>
+<rect x="260" y="0" width="1180" height="64" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="16" width="360" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="320" y="38" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">搜索 订单号 / 柜体ID / 用户</text>
+<text x="1250" y="38" font-size="11" font-weight="600" fill="#16A34A" text-anchor="start" class="font">已启用 MFA</text>
+<rect x="1340" y="18" width="80" height="28" rx="14" ry="14" fill="#111827" opacity="1.0" />
+<text x="1380" y="38" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" class="font">退出</text>
+<text x="284" y="108" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">IoT 事件</text>
+<text x="284" y="134" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">手工注入事件（抽屉）· IngestIotEventRequest</text>
+<rect x="284" y="160" width="1120" height="660" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="304" y="192" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">列表/详情（背景）</text>
+<text x="304" y="214" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">此页展示抽屉效果（示例）</text>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#0B1220" opacity="0.35" />
+<rect x="1020" y="0" width="420" height="900" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1044" y="48" font-size="16" font-weight="900" fill="#111827" text-anchor="start" class="font">手工注入 IoT 事件</text>
+<text x="1044" y="72" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">填写筛选/参数，点击确认执行</text>
+<text x="1044" y="110" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">tenantId</text>
+<rect x="1044" y="120" width="372" height="36" rx="10" ry="10" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1056" y="144" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">T01</text>
+<text x="1044" y="188" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">deviceId</text>
+<rect x="1044" y="198" width="372" height="36" rx="10" ry="10" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1056" y="222" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">CAB-001</text>
+<text x="1044" y="266" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">eventType</text>
+<rect x="1044" y="276" width="372" height="36" rx="10" ry="10" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1056" y="300" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">SLOT_OPENED</text>
+<text x="1044" y="344" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">eventId</text>
+<rect x="1044" y="354" width="372" height="36" rx="10" ry="10" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1056" y="378" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">EVT-...</text>
+<text x="1044" y="422" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">occurredAt</text>
+<rect x="1044" y="432" width="372" height="36" rx="10" ry="10" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1056" y="456" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">now()</text>
+<rect x="1044" y="820" width="96" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="1092.0" y="842" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">取消</text>
+<rect x="1320" y="820" width="96" height="32" rx="10" ry="10" fill="#FF7A00" opacity="1.0" />
+<text x="1368.0" y="842" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">确认</text>
+</svg>

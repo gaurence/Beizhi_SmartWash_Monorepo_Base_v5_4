@@ -6,3 +6,6 @@ dist/
 target/
 *.iml
 .env
+.npm-cache/
+tooling/visual/current/
+tooling/visual/diff/

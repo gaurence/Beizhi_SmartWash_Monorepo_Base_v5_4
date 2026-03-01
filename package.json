@@ -1,0 +1,21 @@
+{
+  "name": "beizhi-smartwash-tooling",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "codegen:frontend": "node tooling/codegen/generate-frontend.mjs",
+    "verify:docs": "node tooling/gates/verify-docs.mjs",
+    "verify:openapi": "node tooling/gates/verify-openapi.mjs",
+    "verify:asyncapi": "node tooling/gates/verify-asyncapi.mjs",
+    "verify:page-coverage": "node tooling/gates/verify-page-coverage.mjs",
+    "verify:traceability": "node tooling/gates/verify-traceability.mjs",
+    "verify:visual": "node tooling/gates/verify-visual.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "pixelmatch": "^7.1.0",
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0"
+  }
+}

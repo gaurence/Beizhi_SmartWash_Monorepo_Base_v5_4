@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="800" fill="#111827" text-anchor="middle" class="font">订单详情</text>
+<text x="195" y="96" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">用户端 CUSTOMER</text>
+<rect x="0" y="766" width="390" height="78" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<circle cx="52" cy="794" r="12" fill="#E5E7EB"/>
+<text x="52" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">首页</text>
+<circle cx="144" cy="794" r="12" fill="#FF7A00"/>
+<text x="144" y="824" font-size="11" font-weight="800" fill="#FF7A00" text-anchor="middle" class="font">订单</text>
+<circle cx="246" cy="794" r="12" fill="#E5E7EB"/>
+<text x="246" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">消息</text>
+<circle cx="338" cy="794" r="12" fill="#E5E7EB"/>
+<text x="338" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">我的</text>
+<rect x="16" y="116" width="358" height="120" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="144" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">ORD20261008</text>
+<text x="32" y="164" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">XX小区·地下车库柜体  |  S-08</text>
+<rect x="263" y="132" width="99" height="24" rx="12" ry="12" fill="#FFF7ED" opacity="1.0" />
+<text x="312.5" y="149" font-size="11" font-weight="800" fill="#111827" text-anchor="middle" class="font">InService</text>
+<rect x="16" y="256" width="358" height="320" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="284" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">服务进度</text>
+<circle cx="40" cy="316" r="6" fill="#FF7A00"/>
+<line x1="40" y1="324" x2="40" y2="372" stroke="#FDBA74" stroke-width="3" opacity="0.9" />
+<text x="60" y="320" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">已创建订单</text>
+<text x="358" y="320" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end" class="font">15:02</text>
+<text x="60" y="340" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">reserveSlot=true</text>
+<circle cx="40" cy="380" r="6" fill="#FF7A00"/>
+<line x1="40" y1="388" x2="40" y2="436" stroke="#FDBA74" stroke-width="3" opacity="0.9" />
+<text x="60" y="384" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">已存钥匙</text>
+<text x="358" y="384" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end" class="font">15:05</text>
+<text x="60" y="404" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">keyStatus=KEY_DEPOSITED</text>
+<circle cx="40" cy="444" r="6" fill="#FF7A00"/>
+<line x1="40" y1="452" x2="40" y2="500" stroke="#FDBA74" stroke-width="3" opacity="0.9" />
+<text x="60" y="448" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">已派单</text>
+<text x="358" y="448" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end" class="font">15:20</text>
+<text x="60" y="468" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">technician=TECH-03</text>
+<circle cx="40" cy="508" r="6" fill="#FF7A00"/>
+<line x1="40" y1="516" x2="40" y2="564" stroke="#FDBA74" stroke-width="3" opacity="0.9" />
+<text x="60" y="512" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">已取钥匙</text>
+<text x="358" y="512" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end" class="font">15:28</text>
+<text x="60" y="532" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">token=USED</text>
+<circle cx="40" cy="572" r="6" fill="#FF7A00"/>
+<text x="60" y="576" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">施工中</text>
+<text x="358" y="576" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end" class="font">15:40</text>
+<text x="60" y="596" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">上传施工证据中</text>
+<rect x="16" y="596" width="358" height="120" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="626" font-size="12" font-weight="800" fill="#6B7280" text-anchor="start" class="font">快捷操作</text>
+<rect x="32" y="644" width="91.33333333333333" height="46" rx="16" ry="16" fill="#F3F4F6" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="77.66666666666666" y="674" font-size="12" font-weight="900" fill="#111827" text-anchor="middle" class="font">查看证据</text>
+<rect x="133.33333333333331" y="644" width="91.33333333333333" height="46" rx="16" ry="16" fill="#F3F4F6" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="178.99999999999997" y="674" font-size="12" font-weight="900" fill="#111827" text-anchor="middle" class="font">联系门店</text>
+<rect x="234.66666666666663" y="644" width="91.33333333333333" height="46" rx="16" ry="16" fill="#FEF2F2" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="280.3333333333333" y="674" font-size="12" font-weight="900" fill="#DC2626" text-anchor="middle" class="font">申请退款</text>
+</svg>

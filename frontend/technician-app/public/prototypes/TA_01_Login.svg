@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+.font{font-family:'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif;}
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<circle cx="320" cy="180" r="180" fill="#FF7A00" opacity="0.22"/>
+<text x="195" y="210" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="font">备至·技师端</text>
+<text x="195" y="236" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle" class="font">接单 · 取钥匙 · 预检 · 施工 · 还钥匙</text>
+<rect x="24" y="300" width="342" height="380" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="44" y="348" font-size="18" font-weight="900" fill="#111827" text-anchor="start" class="font">登录</text>
+<text x="44" y="390" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">工号/手机号</text>
+<rect x="44" y="398" width="302" height="46" rx="14" ry="14" fill="#F9FAFB" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="58" y="428" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">TECH-03 / 17****8899</text>
+<text x="44" y="472" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">密码</text>
+<rect x="44" y="480" width="302" height="46" rx="14" ry="14" fill="#F9FAFB" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="58" y="510" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">••••••••</text>
+<text x="44" y="554" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">人脸/活体验证</text>
+<rect x="44" y="562" width="302" height="46" rx="14" ry="14" fill="#F9FAFB" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="58" y="592" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="start" class="font">上岗必需（示意）</text>
+<rect x="44" y="604" width="302" height="52" rx="18" ry="18" fill="#FF7A00" opacity="1.0" />
+<text x="195" y="636" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="font">登录并上岗</text>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+.font{font-family:'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif;}
+]]></style>
+<rect x="0" y="0" width="390" height="844" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="390" height="44" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<text x="20" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="start" class="font">9:41</text>
+<text x="370" y="28" font-size="12" font-weight="700" fill="#111827" text-anchor="end" class="font">◉◉◉  5G   100%</text>
+<rect x="0" y="44" width="390" height="56" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="195" y="78" font-size="16" font-weight="900" fill="#111827" text-anchor="middle" class="font">还钥匙：扫码柜体</text>
+<text x="195" y="96" font-size="10" font-weight="700" fill="#6B7280" text-anchor="middle" class="font">技师端 TECHNICIAN</text>
+<rect x="0" y="766" width="390" height="78" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<circle cx="80" cy="794" r="12" fill="#FF7A00"/>
+<text x="80" y="824" font-size="11" font-weight="900" fill="#FF7A00" text-anchor="middle" class="font">任务</text>
+<circle cx="195" cy="794" r="12" fill="#E5E7EB"/>
+<text x="195" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">异常</text>
+<circle cx="310" cy="794" r="12" fill="#E5E7EB"/>
+<text x="310" y="824" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle" class="font">我的</text>
+<rect x="16" y="116" width="358" height="120" rx="16" ry="16" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="32" y="144" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">还钥匙：扫码柜体</text>
+<text x="32" y="164" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">钥匙归还需 close + occupancy 信号</text>
+<rect x="298" y="132" width="64" height="24" rx="12" ry="12" fill="#FF7A00" opacity="1.0" />
+<text x="330.0" y="149" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">扫码</text>
+<rect x="16" y="256" width="358" height="400" rx="16" ry="16" fill="#111827" opacity="1.0" />
+<text x="195" y="466" font-size="12" font-weight="700" fill="#CBD5E1" text-anchor="middle" class="font">扫描柜体二维码（示意）</text>
+<path d="M 90 317.2 L 90 306 L 101.2 306" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 122 317.2 L 122 306 L 110.8 306" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 326.8 L 90 338 L 101.2 338" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 122 326.8 L 122 338 L 110.8 338" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 270 317.2 L 270 306 L 281.2 306" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 302 317.2 L 302 306 L 290.8 306" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 270 326.8 L 270 338 L 281.2 338" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 302 326.8 L 302 338 L 290.8 338" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 617.2 L 90 606 L 101.2 606" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 122 617.2 L 122 606 L 110.8 606" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 90 626.8 L 90 638 L 101.2 638" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 122 626.8 L 122 638 L 110.8 638" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 270 617.2 L 270 606 L 281.2 606" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 302 617.2 L 302 606 L 290.8 606" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 270 626.8 L 270 638 L 281.2 638" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 302 626.8 L 302 638 L 290.8 638" fill="none" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

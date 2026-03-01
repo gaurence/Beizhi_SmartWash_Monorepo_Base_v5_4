@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+<filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+</defs>
+<style><![CDATA[
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    .bg { fill: #F6F7FB; }
+    .sidebar { fill: #0B1220; }
+    .topbar { fill: #FFFFFF; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadowSoft); }
+    .tableHead { fill: #F3F4F6; }
+    .muted { fill: #6B7280; }
+]]></style>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="260" height="900" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<text x="24" y="44" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="24" y="70" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start" class="font">平台管理员 PLATFORM_ADMIN</text>
+<text x="24" y="110" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 运营概览</text>
+<text x="24" y="140" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 租户与组织</text>
+<text x="24" y="170" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 用户与权限</text>
+<text x="24" y="200" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 设备与部署</text>
+<text x="24" y="230" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单与履约</text>
+<text x="24" y="260" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 计费策略</text>
+<text x="24" y="290" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 结算中心</text>
+<text x="24" y="320" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 退款中心</text>
+<text x="24" y="350" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 对账中心</text>
+<text x="24" y="380" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 风控</text>
+<text x="24" y="410" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 保险</text>
+<text x="24" y="440" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 通知中心</text>
+<text x="24" y="470" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▾ 审计合规</text>
+<text x="34" y="500" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">审计导出</text>
+<rect x="12" y="518" width="236" height="34" rx="10" ry="10" fill="#111827" opacity="1.0" />
+<rect x="12" y="518" width="4" height="34" rx="2" ry="2" fill="#FF7A00" opacity="1.0" />
+<text x="34" y="540" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">导出历史</text>
+<text x="24" y="580" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 系统设置</text>
+<rect x="260" y="0" width="1180" height="64" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="16" width="360" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="320" y="38" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">搜索 订单号 / 柜体ID / 用户</text>
+<text x="1250" y="38" font-size="11" font-weight="600" fill="#16A34A" text-anchor="start" class="font">已启用 MFA</text>
+<rect x="1340" y="18" width="80" height="28" rx="14" ry="14" fill="#111827" opacity="1.0" />
+<text x="1380" y="38" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" class="font">退出</text>
+<text x="284" y="108" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">审计导出</text>
+<text x="284" y="134" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">导出任务历史 · CSV/HashChain</text>
+<rect x="284" y="160" width="1120" height="86" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="304" y="192" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">导出任务历史</text>
+<text x="304" y="214" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font"></text>
+<rect x="1288" y="176" width="96" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="1336.0" y="198" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">刷新</text>
+<rect x="284" y="260" width="1120" height="560" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="260" width="1120" height="38" rx="14" ry="14" fill="#F3F4F6" opacity="1.0" />
+<text x="296" y="284" font-size="11" font-weight="800" fill="#6B7280" text-anchor="start" class="font">任务ID</text>
+<text x="515" y="284" font-size="11" font-weight="800" fill="#6B7280" text-anchor="start" class="font">范围</text>
+<text x="734" y="284" font-size="11" font-weight="800" fill="#6B7280" text-anchor="start" class="font">状态</text>
+<text x="953" y="284" font-size="11" font-weight="800" fill="#6B7280" text-anchor="start" class="font">创建时间</text>
+<text x="1172" y="284" font-size="11" font-weight="800" fill="#6B7280" text-anchor="start" class="font">下载</text>
+<line x1="284" y1="298" x2="1404" y2="298" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="322" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-1</text>
+<text x="515" y="322" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="322" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="322" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="322" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+<line x1="284" y1="336" x2="1404" y2="336" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="360" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-2</text>
+<text x="515" y="360" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="360" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="360" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="360" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+<line x1="284" y1="374" x2="1404" y2="374" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="398" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-3</text>
+<text x="515" y="398" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="398" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="398" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="398" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+<line x1="284" y1="412" x2="1404" y2="412" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="436" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-4</text>
+<text x="515" y="436" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="436" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="436" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="436" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+<line x1="284" y1="450" x2="1404" y2="450" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="474" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-5</text>
+<text x="515" y="474" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="474" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="474" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="474" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+<line x1="284" y1="488" x2="1404" y2="488" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="512" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">ROW-6</text>
+<text x="515" y="512" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">示例</text>
+<text x="734" y="512" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">正常</text>
+<text x="953" y="512" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">2026-02-16</text>
+<text x="1172" y="512" font-size="12" font-weight="600" fill="#111827" text-anchor="start" class="font">查看</text>
+</svg>

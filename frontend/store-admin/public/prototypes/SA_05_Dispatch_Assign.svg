@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    .bg { fill: #F6F7FB; }
+    .sidebar { fill: #0B1220; }
+    .topbar { fill: #FFFFFF; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadowSoft); }
+    .tableHead { fill: #F3F4F6; }
+    .muted { fill: #6B7280; }
+    
+]]></style>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="260" height="900" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<text x="24" y="44" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="24" y="70" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start" class="font">门店管理员 STORE_ADMIN</text>
+<text x="24" y="110" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 门店概览</text>
+<text x="24" y="140" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单看板</text>
+<text x="24" y="170" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单详情</text>
+<text x="24" y="200" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▾ 调度派单</text>
+<rect x="12" y="208" width="236" height="34" rx="10" ry="10" fill="#111827" opacity="1.0" />
+<rect x="12" y="208" width="4" height="34" rx="2" ry="2" fill="#FF7A00" opacity="1.0" />
+<text x="34" y="230" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">派单调度</text>
+<text x="34" y="270" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">指派抽屉</text>
+<text x="24" y="310" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 人员管理</text>
+<text x="24" y="340" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 柜体与格口</text>
+<text x="24" y="370" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 服务目录</text>
+<text x="24" y="400" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 动态定价</text>
+<text x="24" y="430" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 结算中心</text>
+<text x="24" y="460" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 退款中心</text>
+<text x="24" y="490" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 工单中心</text>
+<text x="24" y="520" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 通知与模板</text>
+<text x="24" y="550" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 滞留策略</text>
+<text x="24" y="580" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 报表中心</text>
+<text x="24" y="610" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 个人中心</text>
+<rect x="260" y="0" width="1180" height="64" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="16" width="360" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<circle cx="301.6" cy="29.6" r="5.6" fill="none" stroke="#6B7280" stroke-width="2"/>
+<line x1="305.52000000000004" y1="33.52" x2="312" y2="40" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="320" y="38" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">搜索 订单号 / 柜体ID / 用户</text>
+<path d="M 1329.0 24.7 C 1325.4 24.7, 1323.96 27.4, 1323.96 30.1 V 33.7 L 1323.24 34.96 V 36.04 H 1334.76 V 34.96 L 1334.04 33.7 V 30.1 C 1334.04 27.4, 1332.6 24.7, 1329.0 24.7 Z" fill="none" stroke="#6B7280" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1329.0" cy="37.3" r="1.08" fill="#6B7280"/>
+<circle cx="1369.0" cy="28.3" r="3.2399999999999998" fill="none" stroke="#6B7280" stroke-width="2"/>
+<path d="M 1363.6 38.2 C 1365.4 33.7, 1372.6 33.7, 1374.4 38.2" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="1250" y="38" font-size="11" font-weight="600" fill="#16A34A" text-anchor="start" class="font">已启用 MFA</text>
+<text x="284" y="108" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">派单调度（指派技师）</text>
+<text x="284" y="134" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">基于 v5.2 需求说明书的端到端页面（示例数据）</text>
+<rect x="284" y="152" width="1132" height="720" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="300" y="180" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">派单调度</text>
+<rect x="300" y="212" width="656" height="640" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="316" y="240" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">待派单队列</text>
+<rect x="316" y="256" width="134" height="24" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="383.0" y="274" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">serviceLevel=标准</text>
+<rect x="316" y="294" width="624" height="34" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="326.0" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">orderNo</text>
+<text x="450.8" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">status</text>
+<text x="575.6" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">carsAhead</text>
+<text x="700.4" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">ETA(min)</text>
+<text x="825.2" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">slot</text>
+<rect x="316" y="328" width="624" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="316" y1="366" x2="940" y2="366" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026300</text>
+<rect x="450.8" y="336" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="352" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">3</text>
+<text x="700.4" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">11</text>
+<text x="825.2" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-11</text>
+<rect x="316" y="366" width="624" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="316" y1="404" x2="940" y2="404" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026301</text>
+<rect x="450.8" y="374" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="390" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">5</text>
+<text x="700.4" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">18</text>
+<text x="825.2" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-22</text>
+<rect x="316" y="404" width="624" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="316" y1="442" x2="940" y2="442" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026302</text>
+<rect x="450.8" y="412" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="428" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">6</text>
+<text x="700.4" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">70</text>
+<text x="825.2" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-14</text>
+<rect x="316" y="442" width="624" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="316" y1="480" x2="940" y2="480" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026303</text>
+<rect x="450.8" y="450" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="466" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">0</text>
+<text x="700.4" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">50</text>
+<text x="825.2" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-19</text>
+<rect x="316" y="480" width="624" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="316" y1="518" x2="940" y2="518" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026304</text>
+<rect x="450.8" y="488" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="504" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">1</text>
+<text x="700.4" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">46</text>
+<text x="825.2" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-13</text>
+<rect x="316" y="518" width="624" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="316" y1="556" x2="940" y2="556" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026305</text>
+<rect x="450.8" y="526" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="542" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4</text>
+<text x="700.4" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">78</text>
+<text x="825.2" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-06</text>
+<rect x="316" y="556" width="624" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="316" y1="594" x2="940" y2="594" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026306</text>
+<rect x="450.8" y="564" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="580" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">2</text>
+<text x="700.4" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">40</text>
+<text x="825.2" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-01</text>
+<rect x="316" y="594" width="624" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="316" y1="632" x2="940" y2="632" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="326.0" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">ORD2026307</text>
+<rect x="450.8" y="602" width="60" height="22" rx="11" ry="11" fill="#EEF2FF" opacity="1.0" />
+<text x="480.8" y="618" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle" class="font">Queued</text>
+<text x="575.6" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">5</text>
+<text x="700.4" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">28</text>
+<text x="825.2" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">S-07</text>
+<rect x="868" y="228" width="72" height="30" rx="10" ry="10" fill="#FF7A00" opacity="1.0" />
+<text x="904.0" y="249" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">自动派单</text>
+<rect x="980" y="212" width="420" height="640" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="996" y="240" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">可用技师</text>
+<rect x="996" y="256" width="102" height="24" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="1047.0" y="274" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">online=true</text>
+<rect x="996" y="294" width="388" height="34" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="1006.0" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">technicianId</text>
+<text x="1083.6" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">姓名</text>
+<text x="1161.2" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">在线</text>
+<text x="1238.8" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">当前任务</text>
+<text x="1316.4" y="317" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" class="font">评分</text>
+<rect x="996" y="328" width="388" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="996" y1="366" x2="1384" y2="366" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-01</text>
+<text x="1083.6" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师1</text>
+<rect x="1161.2" y="336" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="352" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">2</text>
+<text x="1316.4" y="353" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.9</text>
+<rect x="996" y="366" width="388" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="996" y1="404" x2="1384" y2="404" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-02</text>
+<text x="1083.6" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师2</text>
+<rect x="1161.2" y="374" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="390" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">0</text>
+<text x="1316.4" y="391" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.7</text>
+<rect x="996" y="404" width="388" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="996" y1="442" x2="1384" y2="442" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-03</text>
+<text x="1083.6" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师3</text>
+<rect x="1161.2" y="412" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="428" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">0</text>
+<text x="1316.4" y="429" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.5</text>
+<rect x="996" y="442" width="388" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="996" y1="480" x2="1384" y2="480" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-04</text>
+<text x="1083.6" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师4</text>
+<rect x="1161.2" y="450" width="58" height="22" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="1190.2" y="466" font-size="11" font-weight="700" fill="#374151" text-anchor="middle" class="font">离线</text>
+<text x="1238.8" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">1</text>
+<text x="1316.4" y="467" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.5</text>
+<rect x="996" y="480" width="388" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="996" y1="518" x2="1384" y2="518" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-05</text>
+<text x="1083.6" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师5</text>
+<rect x="1161.2" y="488" width="58" height="22" rx="11" ry="11" fill="#F3F4F6" opacity="1.0" />
+<text x="1190.2" y="504" font-size="11" font-weight="700" fill="#374151" text-anchor="middle" class="font">离线</text>
+<text x="1238.8" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">1</text>
+<text x="1316.4" y="505" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">5.0</text>
+<rect x="996" y="518" width="388" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="996" y1="556" x2="1384" y2="556" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-06</text>
+<text x="1083.6" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师6</text>
+<rect x="1161.2" y="526" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="542" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">1</text>
+<text x="1316.4" y="543" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.5</text>
+<rect x="996" y="556" width="388" height="38" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" />
+<line x1="996" y1="594" x2="1384" y2="594" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-07</text>
+<text x="1083.6" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师7</text>
+<rect x="1161.2" y="564" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="580" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">2</text>
+<text x="1316.4" y="581" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.9</text>
+<rect x="996" y="594" width="388" height="38" rx="0" ry="0" fill="#FAFAFB" opacity="1.0" />
+<line x1="996" y1="632" x2="1384" y2="632" stroke="#E5E7EB" stroke-width="1" opacity="0.6" />
+<text x="1006.0" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">TECH-08</text>
+<text x="1083.6" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">技师8</text>
+<rect x="1161.2" y="602" width="58" height="22" rx="11" ry="11" fill="#F0FDF4" opacity="1.0" />
+<text x="1190.2" y="618" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" class="font">在线</text>
+<text x="1238.8" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">0</text>
+<text x="1316.4" y="619" font-size="12" font-weight="500" fill="#111827" text-anchor="start" class="font">4.9</text>
+<rect x="1312" y="228" width="72" height="30" rx="10" ry="10" fill="#FF7A00" opacity="1.0" />
+<text x="1348.0" y="249" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">指派</text>
+</svg>

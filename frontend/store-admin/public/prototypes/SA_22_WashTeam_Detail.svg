@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0B1220" flood-opacity="0.12"/>
+    </filter>
+    
+
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0B1220" flood-opacity="0.10"/>
+    </filter>
+    
+</defs>
+<style><![CDATA[
+
+    .font { font-family: 'PingFang SC','Microsoft YaHei','Helvetica','Arial',sans-serif; }
+    .bg { fill: #F6F7FB; }
+    .sidebar { fill: #0B1220; }
+    .topbar { fill: #FFFFFF; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadowSoft); }
+    .tableHead { fill: #F3F4F6; }
+    .muted { fill: #6B7280; }
+    
+]]></style>
+<rect x="0" y="0" width="1440" height="900" rx="0" ry="0" fill="#F6F7FB" opacity="1.0" />
+<rect x="0" y="0" width="260" height="900" rx="0" ry="0" fill="#0B1220" opacity="1.0" />
+<text x="24" y="44" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">备至·智洗平台</text>
+<text x="24" y="70" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start" class="font">门店管理员 STORE_ADMIN</text>
+<text x="24" y="110" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 门店概览</text>
+<text x="24" y="140" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单看板</text>
+<text x="24" y="170" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 订单详情</text>
+<text x="24" y="200" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 调度派单</text>
+<text x="24" y="230" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▾ 人员管理</text>
+<text x="34" y="260" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">洗车组列表</text>
+<text x="34" y="300" font-size="13" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">新增洗车组</text>
+<text x="34" y="340" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">洗车组详情</text>
+<rect x="20" y="352" width="228" height="30" rx="10" ry="10" fill="#111827" opacity="1.0" />
+<rect x="20" y="352" width="4" height="30" rx="2" ry="2" fill="#FF7A00" opacity="1.0" />
+<text x="46" y="372" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start" class="font">概览</text>
+<text x="46" y="406" font-size="12" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">编辑</text>
+<text x="46" y="440" font-size="12" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">班次记录</text>
+<text x="46" y="474" font-size="12" font-weight="500" fill="#CBD5E1" text-anchor="start" class="font">资质材料</text>
+<text x="24" y="516" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 柜体与格口</text>
+<text x="24" y="546" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 服务目录</text>
+<text x="24" y="576" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 动态定价</text>
+<text x="24" y="606" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 结算中心</text>
+<text x="24" y="636" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 退款中心</text>
+<text x="24" y="666" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 工单中心</text>
+<text x="24" y="696" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 通知与模板</text>
+<text x="24" y="726" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 滞留策略</text>
+<text x="24" y="756" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 报表中心</text>
+<text x="24" y="786" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start" class="font">▸ 个人中心</text>
+<rect x="260" y="0" width="1180" height="64" rx="0" ry="0" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<rect x="284" y="16" width="360" height="32" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<circle cx="301.6" cy="29.6" r="5.6" fill="none" stroke="#6B7280" stroke-width="2"/>
+<line x1="305.52000000000004" y1="33.52" x2="312" y2="40" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="320" y="38" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">搜索 订单号 / 柜体ID / 用户</text>
+<path d="M 1329.0 24.7 C 1325.4 24.7, 1323.96 27.4, 1323.96 30.1 V 33.7 L 1323.24 34.96 V 36.04 H 1334.76 V 34.96 L 1334.04 33.7 V 30.1 C 1334.04 27.4, 1332.6 24.7, 1329.0 24.7 Z" fill="none" stroke="#6B7280" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1329.0" cy="37.3" r="1.08" fill="#6B7280"/>
+<circle cx="1369.0" cy="28.3" r="3.2399999999999998" fill="none" stroke="#6B7280" stroke-width="2"/>
+<path d="M 1363.6 38.2 C 1365.4 33.7, 1372.6 33.7, 1374.4 38.2" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<text x="1250" y="38" font-size="11" font-weight="600" fill="#16A34A" text-anchor="start" class="font">已启用 MFA</text>
+<text x="284" y="108" font-size="22" font-weight="800" fill="#111827" text-anchor="start" class="font">洗车组详情与绩效</text>
+<text x="284" y="134" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start" class="font">基于 v5.2 需求说明书的端到端页面（示例数据）</text>
+<rect x="284" y="152" width="1132" height="720" rx="14" ry="14" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="300" y="180" font-size="14" font-weight="800" fill="#111827" text-anchor="start" class="font">洗车组详情</text>
+<rect x="1316" y="168" width="84" height="30" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="1358.0" y="189" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">编辑</text>
+<rect x="1222" y="168" width="84" height="30" rx="10" ry="10" fill="#DC2626" opacity="1.0" />
+<text x="1264.0" y="189" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">停用</text>
+<rect x="300" y="204" width="80" height="30" rx="10" ry="10" fill="#FF7A00" opacity="1.0" />
+<text x="340.0" y="225" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="font">概览</text>
+<rect x="390" y="204" width="80" height="30" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="430.0" y="225" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">任务记录</text>
+<rect x="480" y="204" width="80" height="30" rx="10" ry="10" fill="#F3F4F6" opacity="1.0" />
+<text x="520.0" y="225" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" class="font">绩效</text>
+<rect x="300" y="248" width="588" height="608" rx="12" ry="12" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="316" y="272" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">technicianId</text>
+<text x="316" y="292" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">TECH-03</text>
+<text x="316" y="324" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">姓名</text>
+<text x="316" y="344" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">张三</text>
+<text x="316" y="376" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">手机号</text>
+<text x="316" y="396" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">17****8899</text>
+<text x="316" y="428" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">组状态</text>
+<text x="316" y="448" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">在岗</text>
+<text x="316" y="480" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">今日完成</text>
+<text x="316" y="500" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">12 单</text>
+<text x="316" y="532" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">平均时长</text>
+<text x="316" y="552" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">28 分钟</text>
+<text x="316" y="584" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">评分</text>
+<text x="316" y="604" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">4.9</text>
+<text x="316" y="636" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">证件组状态</text>
+<text x="316" y="656" font-size="13" font-weight="700" fill="#111827" text-anchor="start" class="font">已验证</text>
+<rect x="912" y="248" width="520" height="608" rx="12" ry="12" fill="#FFFFFF" opacity="1.0" stroke="#E5E7EB" stroke-width="1" />
+<text x="928" y="276" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">时间轴 / Timeline</text>
+<circle cx="936" cy="304" r="5" fill="#FF7A00"/>
+<line x1="936" y1="310" x2="936" y2="352" stroke="#FDBA74" stroke-width="2" opacity="0.9" />
+<text x="956" y="308" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">09:00</text>
+<text x="956" y="326" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">SHIFT_START</text>
+<text x="956" y="344" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">上岗打卡</text>
+<circle cx="936" cy="362" r="5" fill="#FF7A00"/>
+<line x1="936" y1="368" x2="936" y2="410" stroke="#FDBA74" stroke-width="2" opacity="0.9" />
+<text x="956" y="366" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">10:12</text>
+<text x="956" y="384" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">COMPLETE</text>
+<text x="956" y="402" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">完成 ORD20261001</text>
+<circle cx="936" cy="420" r="5" fill="#FF7A00"/>
+<line x1="936" y1="426" x2="936" y2="468" stroke="#FDBA74" stroke-width="2" opacity="0.9" />
+<text x="956" y="424" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">11:05</text>
+<text x="956" y="442" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">COMPLETE</text>
+<text x="956" y="460" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">完成 ORD20261005</text>
+<circle cx="936" cy="478" r="5" fill="#FF7A00"/>
+<line x1="936" y1="484" x2="936" y2="526" stroke="#FDBA74" stroke-width="2" opacity="0.9" />
+<text x="956" y="482" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start" class="font">15:20</text>
+<text x="956" y="500" font-size="12" font-weight="800" fill="#111827" text-anchor="start" class="font">EXCEPTION</text>
+<text x="956" y="518" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" class="font">钥匙一致性异常 ET5002</text>
+</svg>

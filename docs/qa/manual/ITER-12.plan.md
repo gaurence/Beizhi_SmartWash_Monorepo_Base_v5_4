@@ -1,0 +1,34 @@
+# ITER-12 Stage-1 Plan (Plan Only)
+## 1) Scope (bounded context / modules / pages)
+- Bounded contexts/modules: `Order & Fulfillment`, `Task & Execution`, `Key Custody`, `Evidence`, `Audit`, `Finance(Settlement)`, `Identity & Access(RBAC+ABAC)`, `Cabinet/IoT`; enforce tenant isolation + idempotency + append-only evidence/audit.
+- Subsystems: `Technician_App`, `Store_Admin_Portal`, `Customer_App`.
+- `Technician_App` page_keys: `TA_09_Service_Evidence`, `TA_10_Complete_Service`, `TA_11_Park_Vehicle`, `TA_12_ReturnKey_Scan`, `TA_13_ReturnKey_Success`.
+- `Store_Admin_Portal` page_keys: `SA_04_Order_Detail`, `SA_04_1_Order_Evidence`, `SA_04_2_Order_Settlement`, `SA_04_3_Order_Audit`.
+- `Customer_App` page_keys: `CA_14_3_Onsite_Timeline`, `CA_15_Evidence_Gallery`, `CA_16_Retrieve_Reminder`.
+## 2) Files to change (exact paths)
+- Backend existing: `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/AppCustomerController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/AppTechController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/AuditController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/FinanceController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/AppCustomerService.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/AppTechService.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/AuditService.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/infrastructure/repository/InMemoryPlatformRepository.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/security/PermissionGuard.java`, `backend/apps/api-server/src/test/java/com/beizhi/smartwash/PlatformGateIntegrationTest.java`.
+- Backend planned new: `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/OrderController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/EvidenceController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/interfaces/rest/SettlementController.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/OrderService.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/EvidenceService.java`, `backend/apps/api-server/src/main/java/com/beizhi/smartwash/application/service/SettlementService.java`.
+- Frontend Technician: `frontend/technician-app/src/pages/GeneratedPage.vue`, `frontend/technician-app/src/pages/iter12/TA_09_Service_Evidence.vue`, `frontend/technician-app/src/pages/iter12/TA_10_Complete_Service.vue`, `frontend/technician-app/src/pages/iter12/TA_11_Park_Vehicle.vue`, `frontend/technician-app/src/pages/iter12/TA_12_ReturnKey_Scan.vue`, `frontend/technician-app/src/pages/iter12/TA_13_ReturnKey_Success.vue`, `frontend/technician-app/src/router/index.ts`, `frontend/technician-app/src/styles.css`.
+- Frontend Store/Customer + scaffolding: `frontend/store-admin/src/pages/GeneratedPage.vue`, `frontend/store-admin/src/pages/iter12/SA_04_Order_Detail.vue`, `frontend/store-admin/src/pages/iter12/SA_04_1_Order_Evidence.vue`, `frontend/store-admin/src/pages/iter12/SA_04_2_Order_Settlement.vue`, `frontend/store-admin/src/pages/iter12/SA_04_3_Order_Audit.vue`, `frontend/store-admin/src/styles.css`, `frontend/customer-app/src/pages/GeneratedPage.vue`, `frontend/customer-app/src/pages/iter12/CA_14_3_Onsite_Timeline.vue`, `frontend/customer-app/src/pages/iter12/CA_15_Evidence_Gallery.vue`, `frontend/customer-app/src/pages/iter12/CA_16_Retrieve_Reminder.vue`, `frontend/customer-app/src/styles.css`, `tooling/codegen/generate-frontend.mjs`.
+- Contracts/trace/docs: `docs/contracts/openapi.yaml`, `docs/contracts/asyncapi.yaml`, `docs/traceability/page_to_api.md`, `docs/ui/page_inventory.csv`, `docs/qa/manual/ITER-12.md`.
+## 3) APIs/events touched (operationId / topic)
+- OperationId (app/tech): `postAppCabinetsScan`, `postAppOrdersByOrderIdDepositKey`, `postAppOrdersByOrderIdRetrieveKey`, `getAppOrdersByOrderIdTimeline`, `postAppTechEvidenceUploadUrl`, `postAppTechEvidenceRecords`, `postAppTechOrdersByOrderIdPickupKey`, `postAppTechOrdersByOrderIdReturnKey`.
+- OperationId (store/admin): `getOrders`, `postOrders`, `getOrdersByOrderId`, `postOrdersByOrderIdCancel`, `postOrdersByOrderIdDispatch`, `getOrdersByOrderIdTimeline`, `getOrdersByOrderIdEvidence`, `postEvidenceUploadUrl`, `postEvidenceRecords`, `getFinanceSettlements`, `getFinanceSettlementsBySettlementId`, `getFinanceSettlementsBySettlementIdLines`, `postFinanceSettlementsBySettlementIdExport`, `getAuditLogs`, `getAuditLogsByLogId`, `postAuditExports`.
+- Topics/channels: `smartwash.domain.events` (`Order.WashCompleted`, `Order.KeyReturned`, `Order.Closed`, `Task.Completed`), `smartwash.notification.commands`, `mqtt/cabinets/{cabinetId}/commands/open-slot`, `mqtt/cabinets/{cabinetId}/acks/open-slot`, `mqtt/cabinets/{cabinetId}/events`.
+## 4) Automated verification commands to run (make targets)
+- `make verify-docs`
+- `make verify-openapi`
+- `make verify-asyncapi`
+- `make verify-page-coverage ITER=ITER-12`
+- `make verify-traceability ITER=ITER-12`
+- `make verify-visual ITER=ITER-12`
+- `make backend-test`
+- `make frontend-build APPS="customer-app store-admin technician-app"`
+## 5) Manual acceptance checklist by role (links/paths)
+- `TECHNICIAN`: `docs/ui/md/Technician_App/TA_09_Service_Evidence.md` -> `TA_10_Complete_Service.md` -> `TA_11_Park_Vehicle.md` -> `TA_12_ReturnKey_Scan.md` -> `TA_13_ReturnKey_Success.md`; check evidence append-only, ABAC-scoped pickup/return token, repeat-submit idempotency, slot/order status consistency.
+- `STORE_ADMIN`: `docs/ui/md/Store_Admin_Portal/SA_04_Order_Detail.md` -> `SA_04_1_Order_Evidence.md` -> `SA_04_2_Order_Settlement.md` -> `SA_04_3_Order_Audit.md`; check timeline/dispatch visibility, evidence list/export permission, settlement lines/export, audit query/detail/export and deny paths.
+- `CUSTOMER`: `docs/ui/md/Customer_App/CA_14_3_Onsite_Timeline.md` -> `CA_15_Evidence_Gallery.md` -> `CA_16_Retrieve_Reminder.md`; check timeline milestones, watermark/hash fields display, retrieve reminder CTA flow, PII masking.
+## 6) Risks / assumptions / explicit out of scope
+- Risks: current backend lacks several `/orders`, `/evidence`, `/finance/settlements`, and `/app/tech/*` fulfillment endpoints; current generated UI scaffold is metadata-only and not SVG-faithful.
+- Assumptions: tenant resolved from JWT/request context only; all state-changing APIs use `Idempotency-Key`; high-risk key/evidence/export actions append `audit_log` with `request_id` + actor + tenant + resource + result.
+- Explicit out of scope: real BLE/hardware cryptography, live MQTT fleet integration, payment/refund/invoice deep flows, and non-ITER-12 page redesign.

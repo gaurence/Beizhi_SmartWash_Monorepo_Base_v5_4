@@ -1,13 +1,21 @@
-# 自动串行执行（可选）
+# Auto-run (Anti-disconnect v2)
 
-你当前使用的是 VS Code Codex Extension（IDE 内 Agent）。IDE 扩展通常不提供“无人值守串行跑完所有 ITER”的官方能力。
+This prompt set is split into PLAN and DO phases per iteration:
+- `ITER-XX_PLAN.md`: planning only, writes `docs/qa/manual/ITER-XX.plan.md`, stops.
+- `ITER-XX_DO.md`: implements in small chunks (≤ 8 minutes OR ≤ 5 files), commits each chunk, updates `docs/qa/manual/ITER-XX.md`, stops.
 
-如果你想夜间自动串行跑：
-1. 安装/使用 Codex CLI（如有）。
-2. 把本目录复制到仓库 `docs/codex/`。
-3. 在仓库根目录执行：
-   ```bash
-   bash docs/codex/run_all_iterations.sh
-   ```
+## Run via script (Codex CLI)
 
-> 注意：脚本中的 `codex run ...` 命令是示例。不同版本/产品的 CLI 参数可能不同，请按你实际环境调整。
+From repo root:
+
+```bash
+# optional: resume from a specific iteration
+START=ITER-02 MAX_RETRY=5 bash docs/codex/run_all_iterations_v2.sh
+```
+
+Outputs are written to:
+`docs/codex/runs/<timestamp>/{ITER}_PLAN.out.md` and `{ITER}_DO.out.md`
+
+## Notes
+- Use `approval_policy = "never"` for unattended overnight runs (set in `.codex/config.toml`).
+- Keep network access disabled where possible; pre-warm dependencies before overnight runs.

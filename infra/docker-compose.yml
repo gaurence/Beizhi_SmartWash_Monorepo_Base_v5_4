@@ -19,7 +19,7 @@ services:
     ports: ["5672:5672","15672:15672"]
 
   emqx:
-    image: emqx/emqx:5
+    image: emqx/emqx:5.10.3
     ports: ["1883:1883","18083:18083"]
 
   minio:

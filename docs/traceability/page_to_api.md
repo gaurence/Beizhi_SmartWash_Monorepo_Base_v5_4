@@ -11,16 +11,16 @@
 |---|---|---|---|---|---|---|---|---|
 | AA_01_Login | 备至·智洗平台 | AGENT_ADMIN | Login | 入口-登录 |  | identity | ui.Agent_Admin_Portal.Login.view | POST /auth/login; POST /auth/mfa/verify; POST /auth/logout |
 | AA_02_Region_Dashboard | 区域运营大盘 | AGENT_ADMIN | Region | 入口-首页 |  | ui-static | ui.Agent_Admin_Portal.Region.view |  |
-| AA_03_1_Store_Create | 新增门店 | AGENT_ADMIN | Store | 新增 | AA_03_Stores_List | ui-static | ui.Agent_Admin_Portal.Store.manage |  |
-| AA_03_Stores_List | 加盟店管理 | AGENT_ADMIN | Stores | 菜单入口 |  | ui-static | ui.Agent_Admin_Portal.Stores.view |  |
-| AA_04_1_Store_Edit | 编辑门店 | AGENT_ADMIN | Store | 编辑 | AA_04_Store_Detail | ui-static | ui.Agent_Admin_Portal.Store.manage |  |
-| AA_04_2_Store_Contracts | 门店合同与分润 | AGENT_ADMIN | Store | 子页面入口 | AA_04_Store_Detail | ui-static | ui.Agent_Admin_Portal.Store.view |  |
-| AA_04_Store_Detail | 门店详情与KPI | AGENT_ADMIN | Store | 菜单入口 |  | ui-static | ui.Agent_Admin_Portal.Store.view |  |
-| AA_05_1_Onboarding_Step1_Basic | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | ui-static | ui.Agent_Admin_Portal.Onboarding.view |  |
-| AA_05_2_Onboarding_Step2_Contract | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | ui-static | ui.Agent_Admin_Portal.Onboarding.view |  |
+| AA_03_1_Store_Create | 新增门店 | AGENT_ADMIN | Store | 新增 | AA_03_Stores_List | tenant-org | ui.Agent_Admin_Portal.Store.manage | POST /tenants/{tenantId}/stores |
+| AA_03_Stores_List | 加盟店管理 | AGENT_ADMIN | Stores | 菜单入口 |  | tenant-org | ui.Agent_Admin_Portal.Stores.view | GET /tenants/{tenantId}/stores; GET /stores/{storeId} |
+| AA_04_1_Store_Edit | 编辑门店 | AGENT_ADMIN | Store | 编辑 | AA_04_Store_Detail | tenant-org | ui.Agent_Admin_Portal.Store.manage | GET /stores/{storeId}; PUT /stores/{storeId} |
+| AA_04_2_Store_Contracts | 门店合同与分润 | AGENT_ADMIN | Store | 子页面入口 | AA_04_Store_Detail | tenant-org | ui.Agent_Admin_Portal.Store.view | GET /stores/{storeId}/agreements; POST /stores/{storeId}/agreements |
+| AA_04_Store_Detail | 门店详情与KPI | AGENT_ADMIN | Store | 菜单入口 |  | tenant-org | ui.Agent_Admin_Portal.Store.view | GET /stores/{storeId}; GET /stores/{storeId}/agreements |
+| AA_05_1_Onboarding_Step1_Basic | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | tenant-org | ui.Agent_Admin_Portal.Onboarding.view | POST /tenants/{tenantId}/stores; GET /stores/{storeId} |
+| AA_05_2_Onboarding_Step2_Contract | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | tenant-org | ui.Agent_Admin_Portal.Onboarding.view | GET /stores/{storeId}/agreements; POST /stores/{storeId}/agreements |
 | AA_05_3_Onboarding_Step3_DeviceBind | 门店入驻流程 | AGENT_ADMIN | Onboarding | 绑定/配置 | AA_05_Store_Onboarding | asset-investment | ui.Agent_Admin_Portal.Onboarding.manage | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
-| AA_05_4_Onboarding_Step4_GoLive | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | ui-static | ui.Agent_Admin_Portal.Onboarding.view |  |
-| AA_05_Store_Onboarding | 门店入驻/上线流程 | AGENT_ADMIN | Store | 菜单入口 |  | ui-static | ui.Agent_Admin_Portal.Store.view |  |
+| AA_05_4_Onboarding_Step4_GoLive | 门店入驻流程 | AGENT_ADMIN | Onboarding | 子页面入口 | AA_05_Store_Onboarding | tenant-org | ui.Agent_Admin_Portal.Onboarding.view | GET /stores/{storeId}; PUT /stores/{storeId} |
+| AA_05_Store_Onboarding | 门店入驻/上线流程 | AGENT_ADMIN | Store | 菜单入口 |  | tenant-org | ui.Agent_Admin_Portal.Store.view | GET /tenants/{tenantId}/stores; GET /stores/{storeId}; GET /stores/{storeId}/agreements |
 | AA_06_1_Device_Detail | 设备健康度 | AGENT_ADMIN | Device | 进入详情 | AA_06_Devices_Health | asset-investment | ui.Agent_Admin_Portal.Device.view | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
 | AA_06_Devices_Health | 设备健康度 | AGENT_ADMIN | Devices | 菜单入口 |  | asset-investment | ui.Agent_Admin_Portal.Devices.view | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
 | AA_07_1_Settlement_Detail | 结算分润详情 | AGENT_ADMIN | Settlement | 进入详情 | AA_07_Settlements_Shares | finance | ui.Agent_Admin_Portal.Settlement.manage | GET /finance/settlements; GET /finance/settlements/{settlementId}; GET /finance/settlements/{settlementId}/lines; POST /finance/settlements/{settlementId}/export |
@@ -92,11 +92,11 @@
 | CA_11_Deposit_Instructions | 存钥匙指引 | CUSTOMER | Deposit | 菜单入口 |  | ui-static | ui.Customer_App.Deposit.view |  |
 | CA_12_1_Queue_Detail | 排队详情 | CUSTOMER | Queue | 进入详情 | CA_12_Deposit_Success | ui-static | ui.Customer_App.Queue.view |  |
 | CA_12_Deposit_Success | 已排队 | CUSTOMER | Deposit | 菜单入口 |  | ui-static | ui.Customer_App.Deposit.view |  |
-| CA_13_Order_List | 我的订单 | CUSTOMER | Order | 菜单入口 |  | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; GET /app/orders/{orderId}/timeline |
-| CA_14_1_Order_Cancel_Confirm | 取消订单 | CUSTOMER | Order | 子页面入口 | CA_14_Order_Detail_Timeline | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; GET /app/orders/{orderId}/timeline |
-| CA_14_2_Order_Cancel_Result | 订单已取消 | CUSTOMER | Order | 子页面入口 | CA_14_Order_Detail_Timeline | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; GET /app/orders/{orderId}/timeline |
+| CA_13_Order_List | 我的订单 | CUSTOMER | Order | 菜单入口 |  | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; POST /app/orders/{orderId}/cancel; GET /app/orders/{orderId}/timeline |
+| CA_14_1_Order_Cancel_Confirm | 取消订单 | CUSTOMER | Order | 子页面入口 | CA_14_Order_Detail_Timeline | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; POST /app/orders/{orderId}/cancel; GET /app/orders/{orderId}/timeline |
+| CA_14_2_Order_Cancel_Result | 订单已取消 | CUSTOMER | Order | 子页面入口 | CA_14_Order_Detail_Timeline | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; POST /app/orders/{orderId}/cancel; GET /app/orders/{orderId}/timeline |
 | CA_14_3_Onsite_Timeline | 订单详情 | CUSTOMER | Onsite | 子页面入口 | CA_14_Order_Detail_Timeline | ui-static | ui.Customer_App.Onsite.view |  |
-| CA_14_Order_Detail_Timeline | 订单详情 | CUSTOMER | Order | 菜单入口 |  | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; GET /app/orders/{orderId}/timeline |
+| CA_14_Order_Detail_Timeline | 订单详情 | CUSTOMER | Order | 菜单入口 |  | app | ui.Customer_App.Order.view | POST /app/orders; GET /app/orders; GET /app/orders/{orderId}; POST /app/orders/{orderId}/cancel; GET /app/orders/{orderId}/timeline |
 | CA_15_Evidence_Gallery | 证据链 | CUSTOMER | Evidence | 菜单入口 |  | ui-static | ui.Customer_App.Evidence.view |  |
 | CA_16_Retrieve_Reminder | 可取钥匙提醒 | CUSTOMER | Retrieve | 菜单入口 |  | ui-static | ui.Customer_App.Retrieve.view |  |
 | CA_17_1_Retrieve_Instructions | 取钥匙指引 | CUSTOMER | Retrieve | 子页面入口 | CA_17_Scan_Retrieve | ui-static | ui.Customer_App.Retrieve.view |  |
@@ -146,23 +146,23 @@
 | page_key | 页面中文名 | 角色 | 模块 | 入口 | 父页面 | api_tag | permission_key | api_endpoints |
 |---|---|---|---|---|---|---|---|---|
 | PA_01_Login | 备至·智洗平台 | PLATFORM_ADMIN | Login | 入口-登录 |  | identity | ui.Platform_Admin_Portal.Login.view | POST /auth/login; POST /auth/mfa/verify; POST /auth/logout |
-| PA_02_Global_Dashboard | 运营大盘 | PLATFORM_ADMIN | Global | 入口-首页 |  | ui-static | ui.Platform_Admin_Portal.Global.view |  |
-| PA_03_1_Tenant_Create | 新增租户/组织 | PLATFORM_ADMIN | Tenant | 新增 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Tenant.manage |  |
-| PA_03_2_Tenant_Detail_Overview | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Tenant.view |  |
-| PA_03_3_Tenant_Detail_Stores | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Tenant.view |  |
-| PA_03_4_Tenant_Detail_Policies | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Tenant.view |  |
-| PA_03_5_Tenant_Edit | 编辑租户/组织 | PLATFORM_ADMIN | Tenant | 编辑 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Tenant.manage |  |
-| PA_03_6_Tenant_Audit | 租户详情 | PLATFORM_ADMIN | Tenant | 子页面入口 | PA_03_Tenant_Management | audit | ui.Platform_Admin_Portal.Tenant.view | GET /audit/logs; GET /audit/logs/{logId}; POST /audit/exports |
-| PA_03_7_Org_Tree | 组织树 | PLATFORM_ADMIN | Org | 子页面入口 | PA_03_Tenant_Management | ui-static | ui.Platform_Admin_Portal.Org.view |  |
-| PA_03_Tenant_Management | 租户/组织管理 | PLATFORM_ADMIN | Tenant | 菜单入口 |  | ui-static | ui.Platform_Admin_Portal.Tenant.view |  |
-| PA_04_1_User_Create | 新增用户 | PLATFORM_ADMIN | User | 新增 | PA_04_User_Management | ui-static | ui.Platform_Admin_Portal.User.manage |  |
-| PA_04_2_User_Detail | 用户详情 | PLATFORM_ADMIN | User | 进入详情 | PA_04_User_Management | ui-static | ui.Platform_Admin_Portal.User.manage |  |
-| PA_04_3_User_Edit | 编辑用户 | PLATFORM_ADMIN | User | 编辑 | PA_04_User_Management | ui-static | ui.Platform_Admin_Portal.User.manage |  |
-| PA_04_4_User_Roles_Scopes | 用户权限配置 | PLATFORM_ADMIN | User | 子页面入口 | PA_04_User_Management | ui-static | ui.Platform_Admin_Portal.User.manage |  |
-| PA_04_User_Management | 用户管理 | PLATFORM_ADMIN | User | 菜单入口 |  | ui-static | ui.Platform_Admin_Portal.User.manage |  |
-| PA_05_1_Role_Management | 角色管理 | PLATFORM_ADMIN | Role | 子页面入口 | PA_05_RBAC_ABAC_Matrix | ui-static | ui.Platform_Admin_Portal.Role.manage |  |
-| PA_05_3_ABAC_Policy_Editor | ABAC 策略编辑器 | PLATFORM_ADMIN | ABAC | 编辑 | PA_05_RBAC_ABAC_Matrix | ui-static | ui.Platform_Admin_Portal.ABAC.manage |  |
-| PA_05_RBAC_ABAC_Matrix | 权限矩阵（RBAC+ABAC） | PLATFORM_ADMIN | RBAC | 菜单入口 |  | ui-static | ui.Platform_Admin_Portal.RBAC.view |  |
+| PA_02_Global_Dashboard | 运营大盘 | PLATFORM_ADMIN | Global | 入口-首页 |  | reports | ui.Platform_Admin_Portal.Global.view | GET /reports/summary; POST /reports/export |
+| PA_03_1_Tenant_Create | 新增租户/组织 | PLATFORM_ADMIN | Tenant | 新增 | PA_03_Tenant_Management | tenant-org | platform.tenant.create | POST /tenants; POST /tenants/{tenantId}/orgs |
+| PA_03_2_Tenant_Detail_Overview | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | tenant-org | platform.tenant.read | GET /tenants/{tenantId}; GET /tenants/{tenantId}/orgs |
+| PA_03_3_Tenant_Detail_Stores | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | tenant-org | platform.org.read | GET /tenants/{tenantId}/stores |
+| PA_03_4_Tenant_Detail_Policies | 租户详情 | PLATFORM_ADMIN | Tenant | 进入详情 | PA_03_Tenant_Management | abac | iam.abac.read | GET /abac/policies; GET /access-grants |
+| PA_03_5_Tenant_Edit | 编辑租户/组织 | PLATFORM_ADMIN | Tenant | 编辑 | PA_03_Tenant_Management | tenant-org | platform.tenant.update | PUT /tenants/{tenantId} |
+| PA_03_6_Tenant_Audit | 租户详情 | PLATFORM_ADMIN | Tenant | 子页面入口 | PA_03_Tenant_Management | audit | audit.log.read | GET /audit/logs; GET /audit/logs/{logId}; POST /audit/exports |
+| PA_03_7_Org_Tree | 组织树 | PLATFORM_ADMIN | Org | 子页面入口 | PA_03_Tenant_Management | tenant-org | platform.org.read | GET /orgs/tree |
+| PA_03_Tenant_Management | 租户/组织管理 | PLATFORM_ADMIN | Tenant | 菜单入口 |  | tenant-org | platform.tenant.read | GET /tenants; GET /tenants/{tenantId}/orgs; GET /tenants/{tenantId}/stores; GET /orgs/tree |
+| PA_04_1_User_Create | 新增用户 | PLATFORM_ADMIN | User | 新增 | PA_04_User_Management | rbac | iam.user.create | POST /users |
+| PA_04_2_User_Detail | 用户详情 | PLATFORM_ADMIN | User | 进入详情 | PA_04_User_Management | rbac | iam.user.read | GET /users/{userId} |
+| PA_04_3_User_Edit | 编辑用户 | PLATFORM_ADMIN | User | 编辑 | PA_04_User_Management | rbac | iam.user.update | PUT /users/{userId} |
+| PA_04_4_User_Roles_Scopes | 用户权限配置 | PLATFORM_ADMIN | User | 子页面入口 | PA_04_User_Management | rbac | iam.user.role.bind | PUT /users/{userId}/roles; GET /roles; GET /permissions; GET /access-grants; POST /access-grants |
+| PA_04_User_Management | 用户管理 | PLATFORM_ADMIN | User | 菜单入口 |  | rbac | iam.user.read | GET /users; GET /users/{userId} |
+| PA_05_1_Role_Management | 角色管理 | PLATFORM_ADMIN | Role | 子页面入口 | PA_05_RBAC_ABAC_Matrix | rbac | iam.role.perm.bind | GET /roles; POST /roles; PUT /roles/{roleId}; PUT /roles/{roleId}/permissions; GET /permissions |
+| PA_05_3_ABAC_Policy_Editor | ABAC 策略编辑器 | PLATFORM_ADMIN | ABAC | 编辑 | PA_05_RBAC_ABAC_Matrix | abac | iam.abac.policy.manage | GET /abac/policies; POST /abac/policies; PUT /abac/policies/{policyId}; POST /access-grants |
+| PA_05_RBAC_ABAC_Matrix | 权限矩阵（RBAC+ABAC） | PLATFORM_ADMIN | RBAC | 菜单入口 |  | rbac | iam.role.read | GET /roles; GET /permissions; GET /abac/policies; GET /access-grants |
 | PA_06_1_Cabinet_Import_Batch | 批量导入柜体资产 | PLATFORM_ADMIN | Cabinet | 导入 | PA_06_Cabinet_Asset_Registry | asset-investment | ui.Platform_Admin_Portal.Cabinet.manage | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
 | PA_06_Cabinet_Asset_Registry | 柜体资产库 | PLATFORM_ADMIN | Cabinet | 菜单入口 |  | asset-investment | ui.Platform_Admin_Portal.Cabinet.view | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
 | PA_07_Cabinet_Register | 注册柜体资产 | PLATFORM_ADMIN | Cabinet | 菜单入口 |  | asset-investment | ui.Platform_Admin_Portal.Cabinet.view | GET /assets/cabinets; GET /assets/cabinets/{cabinetId}; GET /assets/cabinets/{cabinetId}/slots; POST /iot/cabinets/{cabinetId}/commands/open-slot; GET /iot/cabinets/{cabinetId}/events |
@@ -436,7 +436,7 @@
 | TA_01_5_Authorization_Bind | 人脸验证 | TECHNICIAN | Authorization | 绑定/配置 | TA_01_Login | ui-static | ui.Technician_App.Authorization.manage |  |
 | TA_01_Login | TA_01_Login |  | Login | 入口-登录 |  | app | ui.Technician_App.Login.view | POST /app/auth/sms/send; POST /app/auth/sms/login; POST /app/auth/logout |
 | TA_02_1_Task_Filter | 任务筛选 | TECHNICIAN | Task | 子页面入口 | TA_02_Task_List | app | ui.Technician_App.Task.view | GET /app/tech/tasks; POST /app/tech/tasks/{taskId}/accept; POST /app/tech/tasks/{taskId}/complete |
-| TA_02_2_Switch_Role_Mode | TECH-03 张三 |  | Switch | 子页面入口 | TA_02_Task_List | ui-static | ui.Technician_App.Switch.manage |  |
+| TA_02_2_Switch_Role_Mode | TECH-03 张三 | TECHNICIAN | Switch | 子页面入口 | TA_02_Task_List | app-tech | ui.Technician_App.Switch.manage | GET /app/tech/profile; POST /app/tech/role-mode-switch |
 | TA_02_Task_List | 今日任务 | TECHNICIAN | Task | 菜单入口 |  | app | ui.Technician_App.Task.view | GET /app/tech/tasks; POST /app/tech/tasks/{taskId}/accept; POST /app/tech/tasks/{taskId}/complete |
 | TA_03_1_Task_Evidence_Detail | 证据详情 | TECHNICIAN | Task | 进入详情 | TA_03_Task_Detail | app | ui.Technician_App.Task.view | GET /app/tech/tasks; POST /app/tech/tasks/{taskId}/accept; POST /app/tech/tasks/{taskId}/complete; POST /app/tech/evidence/upload-url; POST /app/tech/evidence/records |
 | TA_03_2_Collaboration_Board | ORD20261008 | TECHNICIAN | Collaboration | 子页面入口 | TA_03_Task_Detail | ui-static | ui.Technician_App.Collaboration.view |  |
@@ -471,4 +471,3 @@
 | page_key | 页面中文名 | 角色 | 模块 | 入口 | 父页面 | api_tag | permission_key | api_endpoints |
 |---|---|---|---|---|---|---|---|---|
 | 00_Design_System | Primary |  | System | 菜单入口 |  | ui-static | ui._Common.System.view |  |
-
